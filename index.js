@@ -7,9 +7,9 @@ console.log(RandomNumbers)
 function checkGuess() {
     const UserInput= guessInput.value;
     
-    const RandomNumbers = Math.round(Math.random()*3)
+    const RandomNumbers = Math.round(Math.random()*100)
     
-    if(UserInput <= 3){
+    if(UserInput <= 100){
       if (RandomNumbers == UserInput) {
         displayMessage.innerHTML = `You Chose  ${UserInput} and bot Chose ${RandomNumbers} <br>🎉 You Won $2,000,000 !!`
     } 
